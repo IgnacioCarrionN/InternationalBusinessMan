@@ -43,6 +43,8 @@ dependencies {
 
     implementation dataDependencies.retrofit
     implementation dataDependencies.gsonConverter
+    implementation dataDependencies.jacksonConverter
+    implementation dataDependencies.jacksonModule
     implementation dataDependencies.httpLogging
 
     implementation dataDependencies.room

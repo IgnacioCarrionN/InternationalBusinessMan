@@ -18,6 +18,7 @@ ext {
     // Retrofit
     retrofit = "2.5.0"
     httpLogging = "3.14.0"
+    jacksonModule = "2.9.7"
     // Glide
     glide = "4.9.0"
     // Room
@@ -42,6 +43,9 @@ ext {
             koinViewModel :  "org.koin:koin-android-viewmodel:$koin",
             retrofit : "com.squareup.retrofit2:retrofit:$retrofit",
             gsonConverter : "com.squareup.retrofit2:converter-gson:$retrofit",
+            //TEST jackson converter
+            jacksonConverter : "com.squareup.retrofit2:converter-jackson:$retrofit",
+            jacksonModule: "com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonModule",
             httpLogging : "com.squareup.okhttp3:logging-interceptor:$httpLogging",
             room : "androidx.room:room-runtime:$room",
             roomKtx :  "androidx.room:room-ktx:$room",
@@ -72,6 +76,9 @@ ext {
             koinAndroid : "org.koin:koin-android:$koin",
             koinScope : "org.koin:koin-android-scope:$koin",
             retrofit : "com.squareup.retrofit2:retrofit:$retrofit",
+            //TEST jackson converter
+            jacksonConverter : "com.squareup.retrofit2:converter-jackson:$retrofit",
+            jacksonModule: "com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonModule",
             gsonConverter : "com.squareup.retrofit2:converter-gson:$retrofit",
             httpLogging : "com.squareup.okhttp3:logging-interceptor:$httpLogging",
             room : "androidx.room:room-runtime:$room",

@@ -49,6 +49,8 @@ dependencies {
 
     implementation appDependencies.retrofit
     implementation appDependencies.gsonConverter
+    implementation appDependencies.jacksonConverter
+    implementation appDependencies.jacksonModule
     implementation appDependencies.httpLogging
 
     implementation appDependencies.room

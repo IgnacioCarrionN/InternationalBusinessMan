@@ -30,6 +30,15 @@ class BusinessViewModel(private val repository: Repository) : ViewModel() {
         repository.fetchApiRates()
         rates.observeForever {
             currencyList.postValue(it.getDistinctCurrencies())
+            if(transactionsForItemDB.value?.isNotEmpty() == true) {
+                transactionsItemListUI.postValue(
+                    transactionsForItemDB.value?.toItemTransactions(
+                        currency.value ?: "USD",
+                        rates.value ?: emptyList(),
+                        2
+                    )
+                )
+            }
         }
         repository.fetchApiTransactions()
         itemNames.observeForever {
