@@ -1,0 +1,13 @@
+apply plugin: 'kotlin'
+
+targetCompatibility = 1.8
+sourceCompatibility = 1.8
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation domainDependencies.kotlin
+    implementation domainDependencies.lifecycle
+
+    implementation domainTestDependencies.jUnit
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/app_graph" app:startDestination="@id/selectItemFragment">
+
+    <fragment android:id="@+id/selectItemFragment"
+              android:name="dev.carrion.internationalbusinessman.ui.items.SelectItemFragment"
+              android:label="SelectItemFragment">
+        <action android:id="@+id/action_selectItemFragment_to_itemTransactionsFragment"
+                app:destination="@+id/itemTransactionsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/itemTransactionsFragment"
+              android:name="dev.carrion.internationalbusinessman.ui.transactions.ItemTransactionsFragment"
+              android:label="ItemTransactionsFragment"/>
+</navigation>
